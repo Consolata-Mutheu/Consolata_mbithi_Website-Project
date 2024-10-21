@@ -1,0 +1,440 @@
+/*Dark-Main Button css
+=========================*/
+
+.dark-button {
+  position: fixed;
+  right: 12px;
+  top: 35%;
+  z-index: 222;
+}
+
+input[type="checkbox"].toggle-switch {
+  transform: rotate(90deg);
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 5em;
+  height: 2em;
+  border-radius: 3em;
+  background-color: #ebebeb;
+  transition: background-color 0.09s ease-in-out;
+  position: relative;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(32 101 239 / 50%);
+}
+
+input[type="checkbox"].toggle-switch:active::after {
+  background-color: #f2f2f2;
+  padding-right: 0.8em;
+}
+
+input[type="checkbox"].toggle-switch::after {
+  content: "\F5A2";
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  transform: rotate(-107deg) !important;
+  background-color: white;
+  color: rgb(40, 118, 255);
+  border-radius: 3em;
+  position: absolute;
+  left: 0;
+  top: 0%;
+  transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    padding 0.3s ease, margin 0.3s ease;
+  box-shadow: 2px 0px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+input[type="checkbox"].toggle-switch:checked {
+  background-color: #fff;
+}
+
+input[type="checkbox"].toggle-switch:checked:active::after {
+  margin-left: -0.8em;
+}
+
+input[type="checkbox"].toggle-switch:checked::after {
+  left: 3em;
+  background-color: #2475fc;
+  content: "\F496";
+  color: #fff;
+}
+
+/*===========< Dark Body CSS > ==============*/
+
+.dark {
+  background: #1d1d1d;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.dark p {
+  color: #a2a2a2;
+  transition: 0.5s;
+}
+
+.dark a {
+  color: #fff;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6 {
+  color: #fff;
+}
+
+/*=========== < Top menu bar >================ */
+
+.dark .techno_nav_manu {
+  background: #00247e;
+}
+
+.dark .bg_color {
+  background: #131313;
+}
+
+.dark .menu a img {
+  filter: invert(2);
+}
+
+.dark .sticky .menu a img {
+  filter: invert(0);
+}
+
+.dark .menu > ul > li a {
+  color: #fff;
+}
+
+/*
+<!-- =======================================-->
+<!--Home 2 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .slider19 {
+  background-image: url(../images/slider/software-dark-hero-bg.jpg);
+}
+
+/*
+<!-- =======================================-->
+<!--Service Section 3 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .style-14.service_area {
+  background: url(../images/software-service-bg-dark.png);
+  background-position: bottom right;
+}
+.dark .service_single_box {
+  background: #101010;
+  filter: inherit;
+}
+
+.dark .service_title h4 {
+  color: #fff;
+}
+
+/*
+<!-- =======================================-->
+<!-- Testimonial Area Dark Css-->
+<!-- =======================================-->*/
+
+.dark .style-2.testimonial_area {
+  background-image: url("../images/software-dark-testi-bg.png");
+  background-position: top center;
+}
+
+.dark .single_testimonial-box {
+  background-color: #101010;
+}
+
+.dark .testi-rating {
+  background: #101010;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/*
+<!-- =======================================-->
+<!--Portfolio Section 5 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .style-2.portfolio_area {
+  background-image: url(../images/software-dark-port-bg.png);
+  background-position: top center;
+}
+
+/*
+<!-- =======================================-->
+<!--Work Process Section 5 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .work_process {
+  background-image: url(../images/software-dark-work-bg.png);
+  background-position: top center;
+}
+
+.dark .single_process_work {
+  background: #101010;
+}
+
+/*
+<!-- =======================================-->
+<!-- Team Section 5 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .team_area.style-1 {
+  background-image: url(../images/software-dark-port-bg.png);
+  background-position: top center;
+}
+
+.dark .team_single_box {
+  background-color: #101010;
+}
+
+.dark .team_social_icon {
+  background-color: #101010;
+}
+
+.dark .team_-thumb img {
+  filter: grayscale(1);
+}
+
+/*
+<!-- =======================================-->
+<!--Pricing Section 5 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .pricing_area.style-1 {
+  background-image: url(../images/software-dark-testi-bg.png);
+  background-position: top center;
+}
+
+.dark .pricing_single-box {
+  background-color: #101010;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .style-1 .pricing_tk h2 {
+  color: #fff;
+}
+
+.dark .pricing-head {
+  border-bottom: 1px solid #a2a2a2;
+}
+
+.dark .pricing_button a {
+  background-color: #1e1d1d;
+  border: 1px solid #a2a2a2;
+}
+
+/*
+<!-- =======================================-->
+<!-- Blog Section 5 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .blog_area.style-2 {
+  background-image: url(../images/software-dark-port-bg.png);
+  background-position: top center;
+}
+
+.dark .style-2 .single_blog_content {
+  background: transparent;
+}
+
+.dark .style-2 .blog_page_title a {
+  color: #fff;
+}
+
+.dark .style-2 .techno_blog_meta a {
+  background: #101010;
+}
+
+.dark .style-2 .techno_blog_meta span {
+  color: #a2a2a2;
+}
+
+/*
+<!-- =======================================-->
+<!-- Footer Section 5 Dark Css-->
+<!-- =======================================-->*/
+
+.dark .footer-section.style-2 {
+  background-image: url(../images/software-dark-testi-bg.png) !important;
+  background-position: top center;
+}
+
+.dark .footer-bottom-area {
+  background: #0f0f0f;
+}
+
+/* ===== Home Digital Agency ===== */
+
+.dark .sticky.style-2.techno_nav_manu {
+  background: transparent !important;
+}
+
+.dark .row.tchn-bg {
+  background: #232323;
+}
+
+.dark .techno-icon-menu a {
+  color: #2876ff;
+}
+
+.dark .home-title p {
+  color: rgb(255, 255, 255);
+}
+
+/* about */
+
+.dark .about-section {
+  background-image: url(../images/about-dark.png);
+  padding: 95px 0px 89px;
+  margin-top: -1px;
+}
+
+.dark .about-content p {
+  color: #ffffff;
+}
+
+.dark .about-sub-box {
+  background: #ff9a61;
+}
+
+.dark .about-sub-box.up {
+  background: #2876ff;
+}
+
+.dark .about-sub-box .about-icon i {
+  color: #fff;
+}
+
+/* Services */
+
+.dark .services-section {
+  background: #021331;
+  padding: 10px 0 0;
+}
+
+.dark .upp .services-content p {
+  color: rgb(255, 255, 255, 0.702);
+}
+
+/* Mission */
+
+.dark .mission-section {
+  background-image: url(../images/service-bg2.png);
+}
+
+.mission-section.style2 {
+  background: url(../images/mission-bg.jpg);
+}
+
+.dark .tabs li a {
+  border: 1px solid #011d4c;
+  background: #011d4c;
+  color: #fff;
+}
+
+.dark li.current a {
+  background: #fff;
+  color: #011d4c;
+}
+
+.dark .mission-section .accordion li a {
+  background: #011d4c;
+  color: #fff;
+}
+
+.dark .mission-section .accordion a.active {
+  color: #fff !important;
+}
+
+.dark .mission-section .accordion li p {
+  background: #011d4c;
+  color: rgb(255, 255, 255, 0.502);
+}
+
+.dark .accordion a.active:after {
+  background: #fff !important;
+}
+
+.dark .accordion a:before {
+  background: #fff;
+}
+
+.dark .accordion a:after {
+  background: #fff;
+}
+
+.dark p.desc-text {
+  color: #2876ff;
+}
+
+.dark .portfolio-content h2 a {
+  color: #232323;
+}
+
+/* Skill area */
+
+.dark .skill-section {
+  background-image: url(../images/skill-dark.jpg);
+}
+
+.dark .prossess-ber-plugin span {
+  color: #fff;
+}
+
+.dark .testimonial-disc p {
+  color: #fff;
+}
+
+/* Team area */
+
+.dark .style-2.team_area {
+  background-image: url(../images/team-bg-dark.jpg);
+}
+
+.dark .style-2 .single_team_content {
+  background-color: #2475fc;
+}
+
+.dark .single_team_content span {
+  color: #fff;
+}
+
+.dark .video-icon a {
+  color: #0c5adb;
+}
+
+.dark .techno-info-section {
+  background: #011331;
+}
+
+/* Brand area */
+
+.dark .brand-area {
+  background: #011331;
+  border-top: 1px solid rgba(40, 118, 255, 0.2);
+}
+
+/* Footer */
+
+.dark .blog-section {
+  background-image: url(../images/service-bg2.png);
+}
+
+.dark .blog-content {
+  background-color: #011d4c;
+}
+
+.dark .blog-person span {
+  color: #fff;
+}
+
+.dark .blog-button a i {
+  color: #fff;
+}
